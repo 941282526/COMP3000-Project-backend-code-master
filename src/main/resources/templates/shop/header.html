@@ -1,0 +1,227 @@
+<!doctype html>
+<html class="x-admin-sm" lang="">
+    <head>
+        <meta charset="UTF-8">
+        <title>Background login</title>
+        <meta name="renderer" content="webkit|ie-comp|ie-stand">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width,user-scalable=yes, minimum-scale=0.4, initial-scale=0.8,target-densitydpi=low-dpi" />
+        <meta http-equiv="Cache-Control" content="no-siteapp" />
+
+        <link rel="stylesheet" href="/css/font.css">
+        <link rel="stylesheet" href="/css/xadmin.css">
+        <link rel="stylesheet" href="/layui/css/layui.css">
+        <script src="/layui/layui.js" charset="utf-8"></script>
+        <script type="text/javascript" src="/js/xadmin.js"></script>
+
+        <script>
+            // 是否开启刷新记忆tab功能
+            var is_remember = true;
+        </script>
+    </head>
+    <body class="index">
+    <!-- 顶部开始 -->
+    <div class="container">
+        <div class="logo">
+            <a href="./index.html">X-admin v2.2</a></div>
+        <div class="left_open">
+            <a><i title="expand left column" class="iconfont">&#xe699;</i></a>
+        </div>
+        <ul class="layui-nav left fast-add" lay-filter="">
+            <li class="layui-nav-item">
+                <a href="javascript:">+Add</a>
+                <dl class="layui-nav-child">
+                    <!-- 二级菜单 -->
+                    <dd>
+                        <a onclick="xadmin.open('maximize','http://www.baidu.com','','',true)">
+                            <i class="iconfont">&#xe6a2;</i>弹出最大化</a></dd>
+                    <dd>
+                        <a onclick="xadmin.open('popup automatic width and height','http://www.baidu.com')">
+                            <i class="iconfont">&#xe6a8;</i>弹出自动宽高</a></dd>
+                    <dd>
+                        <a onclick="xadmin.open('popup specified width and height','http://www.baidu.com',500,300)">
+                            <i class="iconfont">&#xe6a8;</i>弹出指定宽高</a></dd>
+                    <dd>
+                        <a onclick="xadmin.add_tab('open in tab','product-list.html')">
+                            <i class="iconfont">&#xe6b8;</i>在tab打开</a></dd>
+                    <dd>
+                        <a onclick="xadmin.add_tab('open refresh in tab','product-del.html',true)">
+                            <i class="iconfont">&#xe6b8;</i>在tab打开刷新</a></dd>
+                </dl>
+            </li>
+        </ul>
+        <ul class="layui-nav right" lay-filter="">
+            <li class="layui-nav-item">
+                <a href="javascript:">admin</a>
+                <dl class="layui-nav-child">
+                    <!-- 二级菜单 -->
+                    <dd>
+                        <a onclick="xadmin.open('personal information','http://www.baidu.com')">个人信息</a></dd>
+                    <dd>
+                        <a onclick="xadmin.open('switch account','http://www.baidu.com')">切换帐号</a></dd>
+                    <dd>
+                        <a href="./login.html">exit</a></dd>
+                </dl>
+            </li>
+            <li class="layui-nav-item to-index">
+                <a href="/">front page</a></li>
+        </ul>
+    </div>
+    <!-- 顶部结束 -->
+    <!-- 中部开始 -->
+    <!-- 左侧菜单开始 -->
+    <div class="left-nav">
+        <div id="side-nav">
+            <ul id="nav">
+                <li>
+                    <a href="javascript:">
+                        <i class="iconfont left-nav-li" lay-tips="Member Management">&#xe6b8;</i>
+                        <cite>Member Management</cite>
+                        <i class="iconfont nav_right">&#xe697;</i></a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href="" onclick="xadmin.add_tab('statistics page','/index/categories')">
+                                <i class="iconfont">&#xe6a7;</i>
+                                <cite>statistics page</cite></a>
+                        </li>
+                        <li>
+                            <a onclick="xadmin.add_tab('Member list (static form)','product-list.html')">
+                                <i class="iconfont">&#xe6a7;</i>
+                                <cite>Member list (static form)</cite></a>
+                        </li>
+                        <li>
+                            <a onclick="xadmin.add_tab('Member List (Dynamic Form)','member-list1.html',true)">
+                                <i class="iconfont">&#xe6a7;</i>
+                                <cite>Member List (Dynamic Form)</cite></a>
+                        </li>
+                        <li>
+                            <a onclick="xadmin.add_tab('member deletion','product-del.html')">
+                                <i class="iconfont">&#xe6a7;</i>
+                                <cite>member deletion</cite></a>
+                        </li>
+                        <li>
+                            <a href="javascript:">
+                                <i class="iconfont">&#xe70b;</i>
+                                <cite>Member Management</cite>
+                                <i class="iconfont nav_right">&#xe697;</i></a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a onclick="xadmin.add_tab('member deletion','product-del.html')">
+                                        <i class="iconfont">&#xe6a7;</i>
+                                        <cite>member deletion</cite></a>
+                                </li>
+                                <li>
+                                    <a onclick="xadmin.add_tab('level management','member-list1.html')">
+                                        <i class="iconfont">&#xe6a7;</i>
+                                        <cite>level management</cite></a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:">
+                        <i class="iconfont left-nav-li" lay-tips="订单管理">&#xe723;</i>
+                        <cite>order management</cite>
+                        <i class="iconfont nav_right">&#xe697;</i></a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a onclick="xadmin.add_tab('Order List','order-list.html')">
+                                <i class="iconfont">&#xe6a7;</i>
+                                <cite>Order List</cite></a>
+                        </li>
+                        <li>
+                            <a onclick="xadmin.add_tab('Order List1','order-list1.html')">
+                                <i class="iconfont">&#xe6a7;</i>
+                                <cite>Order List1</cite></a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:">
+                        <i class="iconfont left-nav-li" lay-tips="Category management">&#xe723;</i>
+                        <cite>Category management</cite>
+                        <i class="iconfont nav_right">&#xe697;</i></a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a onclick="xadmin.add_tab('multi-level classification','cate.html')">
+                                <i class="iconfont">&#xe6a7;</i>
+                                <cite>multi-level classification</cite></a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:">
+                        <i class="iconfont left-nav-li" lay-tips="administrator management">&#xe726;</i>
+                        <cite>administrator management</cite>
+                        <i class="iconfont nav_right">&#xe697;</i></a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a onclick="xadmin.add_tab('administrator list','admin-list.html')">
+                                <i class="iconfont">&#xe6a7;</i>
+                                <cite>administrator list</cite></a>
+                        </li>
+                        <li>
+                            <a onclick="xadmin.add_tab('role management','admin-role.html')">
+                                <i class="iconfont">&#xe6a7;</i>
+                                <cite>role management</cite></a>
+                        </li>
+                        <li>
+                            <a onclick="xadmin.add_tab('Permission classification','admin-cate.html')">
+                                <i class="iconfont">&#xe6a7;</i>
+                                <cite>Permission classification</cite></a>
+                        </li>
+                        <li>
+                            <a onclick="xadmin.add_tab('authority management','admin-rule.html')">
+                                <i class="iconfont">&#xe6a7;</i>
+                                <cite>authority management</cite></a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:">
+                        <i class="iconfont left-nav-li" lay-tips="icon font">&#xe6b4;</i>
+                        <cite>icon font</cite>
+                        <i class="iconfont nav_right">&#xe697;</i></a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a onclick="xadmin.add_tab('icon corresponding font','unicode.html')">
+                                <i class="iconfont">&#xe6a7;</i>
+                                <cite>icon corresponding font</cite></a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:">
+                        <i class="iconfont left-nav-li" lay-tips="other pages">&#xe6b4;</i>
+                        <cite>other pages</cite>
+                        <i class="iconfont nav_right">&#xe697;</i></a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href="login.html" target="_blank">
+                                <i class="iconfont">&#xe6a7;</i>
+                                <cite>log in page</cite></a>
+                        </li>
+                        <li>
+                            <a onclick="xadmin.add_tab('error page','error.html')">
+                                <i class="iconfont">&#xe6a7;</i>
+                                <cite>error page</cite></a>
+                        </li>
+                        <li>
+                            <a onclick="xadmin.add_tab('sample page','demo.html')">
+                                <i class="iconfont">&#xe6a7;</i>
+                                <cite>sample page</cite></a>
+                        </li>
+                        <li>
+                            <a onclick="xadmin.add_tab('update log','log.html')">
+                                <i class="iconfont">&#xe6a7;</i>
+                                <cite>update log</cite></a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+</html>
