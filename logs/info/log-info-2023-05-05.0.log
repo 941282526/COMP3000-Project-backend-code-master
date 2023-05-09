@@ -1,6 +1,6 @@
 2023-05-05 19:12:24.099 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.1.Final
-2023-05-05 19:12:24.108 [main] INFO  com.example.jingdong.JingdongApplication - Starting JingdongApplication using Java 11.0.18 on yg with PID 200840 (D:\order\order-java-02\target\classes started by 52787 in D:\order\order-java-02)
-2023-05-05 19:12:24.111 [main] INFO  com.example.jingdong.JingdongApplication - The following 1 profile is active: "dev"
+2023-05-05 19:12:24.108 [main] INFO  com.example.jingdong.RestaurantAssistantApplication - Starting JingdongApplication using Java 11.0.18 on yg with PID 200840 (D:\order\order-java-02\target\classes started by 52787 in D:\order\order-java-02)
+2023-05-05 19:12:24.111 [main] INFO  com.example.jingdong.RestaurantAssistantApplication - The following 1 profile is active: "dev"
 2023-05-05 19:12:24.978 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
 2023-05-05 19:12:24.978 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
 2023-05-05 19:12:25.067 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 80 ms. Found 11 JPA repository interfaces.
@@ -34,13 +34,13 @@
 2023-05-05 19:12:27.311 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
 2023-05-05 19:12:29.442 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
 2023-05-05 19:12:29.461 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
-2023-05-05 19:12:29.789 [main] INFO  com.example.jingdong.JingdongApplication - Started JingdongApplication in 6.14 seconds (JVM running for 7.278)
+2023-05-05 19:12:29.789 [main] INFO  com.example.jingdong.RestaurantAssistantApplication - Started JingdongApplication in 6.14 seconds (JVM running for 7.278)
 2023-05-05 19:13:56.916 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 2023-05-05 19:13:56.916 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
 2023-05-05 19:13:56.917 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
-2023-05-05 19:27:24.177 [main] INFO  com.example.jingdong.JingdongApplication - Starting JingdongApplication using Java 11.0.18 on yg with PID 128212 (D:\order\order-java-02\target\classes started by 52787 in D:\order\order-java-02)
+2023-05-05 19:27:24.177 [main] INFO  com.example.jingdong.RestaurantAssistantApplication - Starting JingdongApplication using Java 11.0.18 on yg with PID 128212 (D:\order\order-java-02\target\classes started by 52787 in D:\order\order-java-02)
 2023-05-05 19:27:24.176 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.1.Final
-2023-05-05 19:27:24.178 [main] INFO  com.example.jingdong.JingdongApplication - The following 1 profile is active: "dev"
+2023-05-05 19:27:24.178 [main] INFO  com.example.jingdong.RestaurantAssistantApplication - The following 1 profile is active: "dev"
 2023-05-05 19:27:24.642 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
 2023-05-05 19:27:24.643 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
 2023-05-05 19:27:24.703 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 55 ms. Found 11 JPA repository interfaces.
@@ -74,12 +74,12 @@
 2023-05-05 19:27:26.200 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
 2023-05-05 19:27:27.714 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
 2023-05-05 19:27:27.727 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
-2023-05-05 19:27:28.024 [main] INFO  com.example.jingdong.JingdongApplication - Started JingdongApplication in 4.147 seconds (JVM running for 4.884)
+2023-05-05 19:27:28.024 [main] INFO  com.example.jingdong.RestaurantAssistantApplication - Started JingdongApplication in 4.147 seconds (JVM running for 4.884)
 2023-05-05 19:27:35.107 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 2023-05-05 19:27:35.107 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
 2023-05-05 19:27:35.108 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
-2023-05-05 19:38:51.628 [main] INFO  com.example.jingdong.JingdongApplicationTests - Starting JingdongApplicationTests using Java 11.0.18 on yg with PID 83772 (started by 52787 in D:\order\order-java-02)
-2023-05-05 19:38:51.630 [main] INFO  com.example.jingdong.JingdongApplicationTests - The following 1 profile is active: "dev"
+2023-05-05 19:38:51.628 [main] INFO  com.example.jingdong.RestaurantAssistantApplicationTests - Starting JingdongApplicationTests using Java 11.0.18 on yg with PID 83772 (started by 52787 in D:\order\order-java-02)
+2023-05-05 19:38:51.630 [main] INFO  com.example.jingdong.RestaurantAssistantApplicationTests - The following 1 profile is active: "dev"
 2023-05-05 19:38:51.635 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.1.Final
 2023-05-05 19:38:52.280 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
 2023-05-05 19:38:52.282 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
@@ -106,12 +106,12 @@
 2023-05-05 19:38:54.228 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
 2023-05-05 19:38:54.646 [main] INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
 2023-05-05 19:38:54.651 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-05-05 19:38:59.677 [main] INFO  com.example.jingdong.JingdongApplicationTests - Started JingdongApplicationTests in 8.375 seconds (JVM running for 8.977)
+2023-05-05 19:38:59.677 [main] INFO  com.example.jingdong.RestaurantAssistantApplicationTests - Started JingdongApplicationTests in 8.375 seconds (JVM running for 8.977)
 2023-05-05 19:38:59.937 [SpringApplicationShutdownHook] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
 2023-05-05 19:38:59.938 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
 2023-05-05 19:38:59.945 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-2023-05-05 21:09:10.377 [main] INFO  com.example.jingdong.JingdongApplicationTests - Starting JingdongApplicationTests using Java 11.0.18 on yg with PID 197676 (started by 52787 in D:\order\order-java-02)
-2023-05-05 21:09:10.385 [main] INFO  com.example.jingdong.JingdongApplicationTests - The following 1 profile is active: "dev"
+2023-05-05 21:09:10.377 [main] INFO  com.example.jingdong.RestaurantAssistantApplicationTests - Starting JingdongApplicationTests using Java 11.0.18 on yg with PID 197676 (started by 52787 in D:\order\order-java-02)
+2023-05-05 21:09:10.385 [main] INFO  com.example.jingdong.RestaurantAssistantApplicationTests - The following 1 profile is active: "dev"
 2023-05-05 21:09:10.399 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.1.Final
 2023-05-05 21:09:12.065 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
 2023-05-05 21:09:12.068 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
@@ -138,7 +138,7 @@
 2023-05-05 21:09:14.264 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
 2023-05-05 21:09:14.751 [main] INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
 2023-05-05 21:09:14.756 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-05-05 21:09:19.715 [main] INFO  com.example.jingdong.JingdongApplicationTests - Started JingdongApplicationTests in 9.802 seconds (JVM running for 12.317)
+2023-05-05 21:09:19.715 [main] INFO  com.example.jingdong.RestaurantAssistantApplicationTests - Started JingdongApplicationTests in 9.802 seconds (JVM running for 12.317)
 2023-05-05 21:09:20.068 [SpringApplicationShutdownHook] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
 2023-05-05 21:09:20.069 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
 2023-05-05 21:09:20.076 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
